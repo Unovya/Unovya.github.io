@@ -1,0 +1,16 @@
+h1{
+    font-size: 300%;
+}
+
+body{
+    background: black;
+}
+
+.txt{
+    color: white;
+    font-family: arial, sans-serif;
+}
+#topTitle{
+    text-align: center;
+    font-family: "DejaVu Sans Mono", monospace;
+}
