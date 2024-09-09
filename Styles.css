@@ -1,0 +1,313 @@
+/*________________________________________________*/
+/* Overall Pages */
+
+body{
+    margin:0;
+    font-family: Gill Sans, sans-serif;
+    background-color:#0F0F0F;
+
+}
+
+.txt{
+    color:grey;
+    text-align:center;
+    position: relative;
+}
+
+
+/*________________________________________________*/
+/* Index Specific */
+.gradient-txt{
+    font-size: 220%;
+    background: linear-gradient(
+            90deg,
+            #2E073F,
+            #7A1CAC,
+            #180161,
+            #720455,
+            #910A67
+    );
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient-animation 8s ease infinite;
+    background-size: 500%;
+}
+
+@keyframes gradient-animation {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.buttonGradient{
+    background: linear-gradient(
+            90deg,
+            #180161,
+            #4F1787,
+            #EB3678,
+            #BF2EF0,
+            #910A67
+    );
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient-animation 7s ease infinite;
+    background-size: 500%;
+}
+
+#indexSubTitle{
+    opacity: 0;
+}
+
+/*noinspection CssUnusedSymbol*/
+#indexSubTitle.visible{
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+#title{
+    text-align: center;
+    margin-top: 5%;
+    transform: translateY(230px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 1.5s;
+}
+
+/*noinspection CssUnusedSymbol*/
+#title.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#aboutMeButton{
+    text-align: center;
+    font-size: 150%;
+    min-height: 30px;
+    min-width: 50px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.container{
+    position: relative;
+}
+.center{
+    margin:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -0%);
+}
+
+/*noinspection CssUnusedSymbol*/
+#aboutMeButton.visible{
+    opacity: 1;
+    transition: opacity 4.5s;
+}
+
+/*________________________________________________*/
+/* About-me Specific */
+
+.headerTxt{
+    color:blueviolet;
+    text-align: center;
+    position: relative;
+}
+/*________________________________________________*/
+/* Works Page Specific */
+
+#gradient-txtWorks{
+    font-size: 220%;
+    background: linear-gradient(
+            90deg,
+            #180161,
+            #4F1787,
+            #704264,
+            #824D74,
+            #910A67
+    );
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient-animation 8s ease infinite;
+    background-size: 500%;
+}
+
+#CccLink{
+    color:rgb(59, 205, 156);
+}
+/*________________________________________________*/
+/* Topnav */
+
+.TopNav{
+    background-color: #111111;
+    overflow: hidden;
+    position: relative;
+}
+
+.TopNav a{
+    float: left;
+    color: darkmagenta;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 120%;
+    padding: 14px 16px;
+
+}
+.TopNav a:hover{
+    color: darkviolet;
+    transition: 0.5s;
+}
+.TopNav a:active{
+    color: blueviolet;
+}
+
+
+/*________________________________________________*/
+/* Background effects */
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0f0f0f;
+    overflow: hidden;
+}
+
+.background span {
+    width: 29vmin;
+    height: 29vmin;
+    border-radius: 29vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #180161;
+    top: 55%;
+    left: 42%;
+    animation-duration: 31s;
+    animation-delay: -2s;
+    transform-origin: -12vw 16vh;
+    box-shadow: 58vmin 0 7.412653880269979vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #030637;
+    top: 86%;
+    left: 40%;
+    animation-duration: 29s;
+    animation-delay: -49s;
+    transform-origin: -15vw 2vh;
+    box-shadow: 58vmin 0 8.110287236923vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #720455;
+    top: 15%;
+    left: 5%;
+    animation-duration: 30s;
+    animation-delay: -39s;
+    transform-origin: 0 -2vh;
+    box-shadow: 58vmin 0 8.064790350891633vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #180161;
+    top: 43%;
+    left: 13%;
+    animation-duration: 50s;
+    animation-delay: -3s;
+    transform-origin: -10vw -2vh;
+    box-shadow: 58vmin 0 8.187609527751505vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #180161;
+    top: 77%;
+    left: 78%;
+    animation-duration: 46s;
+    animation-delay: -26s;
+    transform-origin: 20vw -2vh;
+    box-shadow: 58vmin 0 7.717058524570614vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #030637;
+    top: 30%;
+    left: 96%;
+    animation-duration: 46s;
+    animation-delay: -18s;
+    transform-origin: -16vw -18vh;
+    box-shadow: 58vmin 0 7.967898216517831vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #720455;
+    top: 99%;
+    left: 76%;
+    animation-duration: 19s;
+    animation-delay: -8s;
+    transform-origin: 11vw -9vh;
+    box-shadow: 58vmin 0 7.747698010927513vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #030637;
+    top: 69%;
+    left: 24%;
+    animation-duration: 50s;
+    animation-delay: -10s;
+    transform-origin: -20vw 15vh;
+    box-shadow: 58vmin 0 7.942680768357247vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #3c0753;
+    top: 73%;
+    left: 68%;
+    animation-duration: 54s;
+    animation-delay: -45s;
+    transform-origin: 22vw 17vh;
+    box-shadow: -58vmin 0 7.441648849998849vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #3c0753;
+    top: 59%;
+    left: 34%;
+    animation-duration: 48s;
+    animation-delay: -41s;
+    transform-origin: -17vw -2vh;
+    box-shadow: 58vmin 0 7.289784471606923vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #180161;
+    top: 73%;
+    left: 76%;
+    animation-duration: 35s;
+    animation-delay: -14s;
+    transform-origin: -13vw 23vh;
+    box-shadow: 58vmin 0 7.427601918856864vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #030637;
+    top: 21%;
+    left: 58%;
+    animation-duration: 55s;
+    animation-delay: -29s;
+    transform-origin: 19vw -21vh;
+    box-shadow: -58vmin 0 8.232654119736129vmin currentColor;
+}
+
